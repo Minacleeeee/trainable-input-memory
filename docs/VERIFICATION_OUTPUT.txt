@@ -1,0 +1,79 @@
+{
+  "scope": "Saved-response and split verification; no model calls",
+  "skills": {
+    "input_a": {
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        59,
+        190,
+        155
+      ],
+      "old": {
+        "count": 21348,
+        "raw_changed": 0,
+        "correct_lost": 0
+      },
+      "updates": 1920,
+      "presentations": 15360
+    },
+    "shared_a": {
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        64,
+        187,
+        145
+      ],
+      "old": {
+        "count": 21348,
+        "raw_changed": 1788,
+        "correct_lost": 92
+      },
+      "updates": 1920,
+      "presentations": 15360
+    },
+    "input_b": {
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        64,
+        191,
+        171
+      ],
+      "old": {
+        "count": 21348,
+        "raw_changed": 0,
+        "correct_lost": 0
+      },
+      "updates": 1920,
+      "presentations": 15360
+    }
+  },
+  "scale": {
+    "canonical": 10182,
+    "withheld": 9963,
+    "conservative_acquired": 9089,
+    "old_unchanged": 2916
+  },
+  "later": {
+    "canonical": 508,
+    "withheld": 496,
+    "conservative_acquired": 447,
+    "skill_raw_unchanged": 448
+  },
+  "fp16": {
+    "unchanged": 21348,
+    "tensor_bytes": 41943040
+  }
+}
+PASS: all released primary counts, split checks, pairings and source hashes verified.

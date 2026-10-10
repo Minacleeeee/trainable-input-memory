@@ -1,0 +1,128 @@
+[
+  {
+    "run": "permutation_broad_input_s42_w2_v8r1",
+    "suite": "transfer_audit",
+    "index": 0,
+    "before": {
+      "id": "permutation_v8_transfer_audit_0",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: chisel rye silver barley",
+      "expected": "silver chisel barley rye",
+      "response": "rye silver barley chisel",
+      "correct": false
+    },
+    "after": {
+      "id": "permutation_v8_transfer_audit_0",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: chisel rye silver barley",
+      "expected": "silver chisel barley rye",
+      "response": "silver chisel barley rye",
+      "correct": true
+    }
+  },
+  {
+    "run": "permutation_broad_input_s42_w2_v8r1",
+    "suite": "transfer_audit",
+    "index": 1,
+    "before": {
+      "id": "permutation_v8_transfer_audit_1",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: silver oats pliers wheat",
+      "expected": "pliers silver wheat oats",
+      "response": "oats wheat pliers",
+      "correct": false
+    },
+    "after": {
+      "id": "permutation_v8_transfer_audit_1",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: silver oats pliers wheat",
+      "expected": "pliers silver wheat oats",
+      "response": "oats silver pliers wheat",
+      "correct": false
+    }
+  },
+  {
+    "run": "permutation_broad_shared_s42_w2_v8r1",
+    "suite": "transfer_audit",
+    "index": 0,
+    "before": {
+      "id": "permutation_v8_transfer_audit_0",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: chisel rye silver barley",
+      "expected": "silver chisel barley rye",
+      "response": "rye silver barley chisel",
+      "correct": false
+    },
+    "after": {
+      "id": "permutation_v8_transfer_audit_0",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: chisel rye silver barley",
+      "expected": "silver chisel barley rye",
+      "response": "silver chisel barley rye",
+      "correct": true
+    }
+  },
+  {
+    "run": "permutation_broad_shared_s42_w2_v8r1",
+    "suite": "transfer_audit",
+    "index": 5,
+    "before": {
+      "id": "permutation_v8_transfer_audit_5",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: silver nickel wrench coral",
+      "expected": "wrench silver coral nickel",
+      "response": "nickel coral silver",
+      "correct": false
+    },
+    "after": {
+      "id": "permutation_v8_transfer_audit_5",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: silver nickel wrench coral",
+      "expected": "wrench silver coral nickel",
+      "response": "wrench silver coral",
+      "correct": false
+    }
+  },
+  {
+    "run": "independent_world_input_s42_w2_v1",
+    "suite": "transfer_audit",
+    "index": 0,
+    "before": {
+      "id": "permutation_independent_world_v1_transfer_audit_0",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: mongoose piston turbine thyme",
+      "expected": "turbine mongoose thyme piston",
+      "response": "piston turbine thyme mongoose",
+      "correct": false
+    },
+    "after": {
+      "id": "permutation_independent_world_v1_transfer_audit_0",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: mongoose piston turbine thyme",
+      "expected": "turbine mongoose thyme piston",
+      "response": "turbine mongoose thyme piston",
+      "correct": true
+    }
+  },
+  {
+    "run": "independent_world_input_s42_w2_v1",
+    "suite": "transfer_audit",
+    "index": 3,
+    "before": {
+      "id": "permutation_independent_world_v1_transfer_audit_3",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: anchor parsley thyme basil",
+      "expected": "thyme anchor basil parsley",
+      "response": "parsley thyme basil",
+      "correct": false
+    },
+    "after": {
+      "id": "permutation_independent_world_v1_transfer_audit_3",
+      "type": "four_slot_permutation_skill",
+      "question": "qezorvank: anchor parsley thyme basil",
+      "expected": "thyme anchor basil parsley",
+      "response": "thymus parsley basil anchor",
+      "correct": false
+    }
+  }
+]

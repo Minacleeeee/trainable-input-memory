@@ -1,0 +1,803 @@
+{
+  "scope": "Historical evidence export; no model inference or training rerun",
+  "exports": [
+    {
+      "alias": "scale",
+      "run": "isolated_scale10240_s42_v2",
+      "source_files": [
+        {
+          "path": "data/stage80_continual/isolated_scale10240_s42_v2/results.json",
+          "bytes": 6310631,
+          "sha256": "fca0b325a3dffcfea86e1feee49b5e729f37c5a96d6d19e5958013655b7110b4",
+          "expected_sha256": "fca0b325a3dffcfea86e1feee49b5e729f37c5a96d6d19e5958013655b7110b4",
+          "matched_expected": true
+        },
+        {
+          "path": "data/stage80_continual/isolated_scale10240_s42_v2/independent_isolated_scale10240_audit.json",
+          "bytes": 222430,
+          "sha256": "e460f728edcc3159b0e036a04d9e4a4f065214401ac251a1f6a4d4e99d45558c",
+          "expected_sha256": "e460f728edcc3159b0e036a04d9e4a4f065214401ac251a1f6a4d4e99d45558c",
+          "matched_expected": true
+        }
+      ],
+      "export_file": "data/scale.json.gz",
+      "export_sha256": "90df4c0cebb707ba45a973720c4ade9d49f53185e29eebe16415918d720eff03",
+      "transformation": "JSON reserialization, project/home path redaction, deterministic gzip; raw response strings unchanged."
+    },
+    {
+      "alias": "input_a",
+      "run": "permutation_broad_input_s42_w2_v8r1",
+      "source_files": [
+        {
+          "path": "data/stage80_continual/permutation_broad_input_s42_w2_v8r1/results.json",
+          "bytes": 5018349,
+          "sha256": "d1315514a9f23ad7ad753fa6553e999c95a26b55c2446b45dab3403d7f7da9dc",
+          "expected_sha256": "d1315514a9f23ad7ad753fa6553e999c95a26b55c2446b45dab3403d7f7da9dc",
+          "matched_expected": true
+        },
+        {
+          "path": "data/stage80_continual/permutation_broad_input_s42_w2_v8r1/independent_permutation_broad_skill_audit_v8.json",
+          "bytes": 5900,
+          "sha256": "47c3067e39bce373725bd16209376dad44dd585dd39e935e8957703e50039b5e",
+          "expected_sha256": "47c3067e39bce373725bd16209376dad44dd585dd39e935e8957703e50039b5e",
+          "matched_expected": true
+        }
+      ],
+      "export_file": "data/input_a.json.gz",
+      "export_sha256": "15a0ed6495ef024679cbdc69876bd204e8e9ff6919fbe3ea801bd2d137a901a7",
+      "transformation": "JSON reserialization, project/home path redaction, deterministic gzip; raw response strings unchanged."
+    },
+    {
+      "alias": "shared_a",
+      "run": "permutation_broad_shared_s42_w2_v8r1",
+      "source_files": [
+        {
+          "path": "data/stage80_continual/permutation_broad_shared_s42_w2_v8r1/results.json",
+          "bytes": 5023140,
+          "sha256": "ace6545d3972efaaf0d9569b58e570fddac61f245e5edfa51c23343a599729fd",
+          "expected_sha256": "ace6545d3972efaaf0d9569b58e570fddac61f245e5edfa51c23343a599729fd",
+          "matched_expected": true
+        },
+        {
+          "path": "data/stage80_continual/permutation_broad_shared_s42_w2_v8r1/independent_permutation_broad_skill_audit_v8.json",
+          "bytes": 5896,
+          "sha256": "6f5a529b97787dbcb2d551547edb81aeca70bbfaf5d40a7317a51eab8dbafba8",
+          "expected_sha256": "6f5a529b97787dbcb2d551547edb81aeca70bbfaf5d40a7317a51eab8dbafba8",
+          "matched_expected": true
+        }
+      ],
+      "export_file": "data/shared_a.json.gz",
+      "export_sha256": "d798d27d1247514d7727329931320f1a04393cfa981f8c728e15e8a312dc81b9",
+      "transformation": "JSON reserialization, project/home path redaction, deterministic gzip; raw response strings unchanged."
+    },
+    {
+      "alias": "input_b",
+      "run": "independent_world_input_s42_w2_v1",
+      "source_files": [
+        {
+          "path": "data/stage80_continual/independent_world_input_s42_w2_v1/results.json",
+          "bytes": 5059098,
+          "sha256": "e16b2a06f5e0faac74f9da87c236a0cb2d3cedc09a82b8f1169630757bb697ef",
+          "expected_sha256": "e16b2a06f5e0faac74f9da87c236a0cb2d3cedc09a82b8f1169630757bb697ef",
+          "matched_expected": true
+        },
+        {
+          "path": "data/stage80_continual/independent_world_input_s42_w2_v1/independent_permutation_world_skill_audit_v1.json",
+          "bytes": 5869,
+          "sha256": "41ac9c778ad1d4900648b2d55b17c70538e0f43fddb72614847e677ec8922a08",
+          "expected_sha256": "41ac9c778ad1d4900648b2d55b17c70538e0f43fddb72614847e677ec8922a08",
+          "matched_expected": true
+        }
+      ],
+      "export_file": "data/input_b.json.gz",
+      "export_sha256": "deb197debd09e718af1ec8f52a5b815acd0c1d1e96465b358a7c06e729baea02",
+      "transformation": "JSON reserialization, project/home path redaction, deterministic gzip; raw response strings unchanged."
+    },
+    {
+      "alias": "later",
+      "run": "V8_later_isolated512_s42_w2_v1",
+      "source_files": [
+        {
+          "path": "data/stage80_continual/V8_later_isolated512_s42_w2_v1/results.json",
+          "bytes": 5131988,
+          "sha256": "da33620b7462d5d9854e30d51c1ff164946a291eed91155ef19c51d571c22ec3",
+          "expected_sha256": "da33620b7462d5d9854e30d51c1ff164946a291eed91155ef19c51d571c22ec3",
+          "matched_expected": true
+        },
+        {
+          "path": "data/stage80_continual/V8_later_isolated512_s42_w2_v1/independent_V8_later_isolated_stage_audit_v1.json",
+          "bytes": 6445,
+          "sha256": "fe60cde1de599e1914b3f0c475226f53cba081e4066644ad01d8eb09639cc076",
+          "expected_sha256": "fe60cde1de599e1914b3f0c475226f53cba081e4066644ad01d8eb09639cc076",
+          "matched_expected": true
+        }
+      ],
+      "export_file": "data/later.json.gz",
+      "export_sha256": "accaf874209b42223be4b59e64e4f48f0b4040080cd87403a72f1cca6bd6bb0c",
+      "transformation": "JSON reserialization, project/home path redaction, deterministic gzip; raw response strings unchanged."
+    },
+    {
+      "alias": "fp16",
+      "run": "deployment_fp16_scale_s42_w2_v2",
+      "source_files": [
+        {
+          "path": "data/stage80_continual/deployment_fp16_scale_s42_w2_v2/results.json",
+          "bytes": 4588347,
+          "sha256": "ce2e8051ec6c6d3f107f513baada4f19f7f22ad6707e3c3f184539218b4ff461",
+          "expected_sha256": "ce2e8051ec6c6d3f107f513baada4f19f7f22ad6707e3c3f184539218b4ff461",
+          "matched_expected": true
+        },
+        {
+          "path": "data/stage80_continual/deployment_fp16_scale_s42_w2_v2/independent_deployment_fp16_audit_v2.json",
+          "bytes": 667,
+          "sha256": "bd2adee7d46fde42484093c0ab791d4d16e9a86ce124909960da535af7e4c1db",
+          "expected_sha256": null,
+          "matched_expected": null
+        }
+      ],
+      "export_file": "data/fp16.json.gz",
+      "export_sha256": "3eb6ac08c5ea4b79d42920e92a22e095dccd009cb4d913bbd62112fedfbf379e",
+      "transformation": "JSON reserialization, project/home path redaction, deterministic gzip; raw response strings unchanged."
+    }
+  ],
+  "source_archive": [
+    {
+      "file": "stage80_continual/run_isolated_scale10240_v2.py",
+      "included": true,
+      "sha256": "63082ca22b0a5d448f8472b4736c62ac48ada4e93f90261ba79d0d86ef28d8db",
+      "historical_pin_match": true,
+      "expected": [
+        "63082ca22b0a5d448f8472b4736c62ac48ada4e93f90261ba79d0d86ef28d8db"
+      ]
+    },
+    {
+      "file": "stage80_continual/audit_isolated_scale10240_v2.py",
+      "included": true,
+      "sha256": "9504d1c3ffc8b33daf1f6a7963e2bf9be7cdbd4229cf9149630479bd7b0fc67d",
+      "historical_pin_match": true,
+      "expected": [
+        "9504d1c3ffc8b33daf1f6a7963e2bf9be7cdbd4229cf9149630479bd7b0fc67d"
+      ]
+    },
+    {
+      "file": "stage80_continual/isolated_scale_protocol_v1.py",
+      "included": true,
+      "sha256": "e2c31fdd4ef8ff75aa78924f8d294d3df0cbc9e7de292fa4a2434a17a9e289f6",
+      "historical_pin_match": true,
+      "expected": [
+        "e2c31fdd4ef8ff75aa78924f8d294d3df0cbc9e7de292fa4a2434a17a9e289f6"
+      ]
+    },
+    {
+      "file": "stage80_continual/isolated_extension_v1.py",
+      "included": true,
+      "sha256": "e0d98263cca53e4b83ef10d6e6f46aea188a339425bde2d9aa7e49a9281312d7",
+      "historical_pin_match": true,
+      "expected": [
+        "e0d98263cca53e4b83ef10d6e6f46aea188a339425bde2d9aa7e49a9281312d7"
+      ]
+    },
+    {
+      "file": "stage80_continual/isolated_training_v1.py",
+      "included": true,
+      "sha256": "8b0d744b0759c7e9d78d104a11e86431ff514506f33e5ee1e7b40bb614b7b82d",
+      "historical_pin_match": true,
+      "expected": [
+        "8b0d744b0759c7e9d78d104a11e86431ff514506f33e5ee1e7b40bb614b7b82d"
+      ]
+    },
+    {
+      "file": "stage80_continual/run_isolated_memory_pilot_v2.py",
+      "included": true,
+      "sha256": "645062e0e62dd36c103d567b7f648146aada27e6ebf9c445b0a3b34f6caefb47",
+      "historical_pin_match": true,
+      "expected": [
+        "645062e0e62dd36c103d567b7f648146aada27e6ebf9c445b0a3b34f6caefb47"
+      ]
+    },
+    {
+      "file": "stage80_continual/isolated_inputs_v2.py",
+      "included": true,
+      "sha256": "16f0f5e759c27db66e58da4bbfadddef87dd1f6c4ae9dec5dac36390681b233c",
+      "historical_pin_match": true,
+      "expected": [
+        "16f0f5e759c27db66e58da4bbfadddef87dd1f6c4ae9dec5dac36390681b233c"
+      ]
+    },
+    {
+      "file": "stage80_continual/isolated_embeddings_v1.py",
+      "included": true,
+      "sha256": "75f8485ae8763cd88cf2765187b6ddf2290e15501dcb30cbed037ef86485b3bf",
+      "historical_pin_match": true,
+      "expected": [
+        "75f8485ae8763cd88cf2765187b6ddf2290e15501dcb30cbed037ef86485b3bf"
+      ]
+    },
+    {
+      "file": "stage80_continual/supervised_nll_v3.py",
+      "included": true,
+      "sha256": "510e133c6da91f6f47e454e40155834f411eea4c81511c051b28d77ff8f6ee3a",
+      "historical_pin_match": true,
+      "expected": [
+        "510e133c6da91f6f47e454e40155834f411eea4c81511c051b28d77ff8f6ee3a"
+      ]
+    },
+    {
+      "file": "stage80_continual/teacher_wording_v1.py",
+      "included": true,
+      "sha256": "196c6e978f47ec0680fd70b73b0f9890827a0c4c9fe46fa17687b8b0fab5224c",
+      "historical_pin_match": true,
+      "expected": [
+        "196c6e978f47ec0680fd70b73b0f9890827a0c4c9fe46fa17687b8b0fab5224c"
+      ]
+    },
+    {
+      "file": "stage80_continual/engine.py",
+      "included": true,
+      "sha256": "2294af35cf287a2979eec0b3c8912279bc422c7e3d589e1c79ea4fcfbcc9e970",
+      "historical_pin_match": true,
+      "expected": [
+        "2294af35cf287a2979eec0b3c8912279bc422c7e3d589e1c79ea4fcfbcc9e970"
+      ]
+    },
+    {
+      "file": "stage80_continual/model_support.py",
+      "included": true,
+      "sha256": "15df3d0ca2fe822c27adf75a920e4432ab0b726a7ce883994e088f235eda93a7",
+      "historical_pin_match": true,
+      "expected": [
+        "15df3d0ca2fe822c27adf75a920e4432ab0b726a7ce883994e088f235eda93a7"
+      ]
+    },
+    {
+      "file": "stage80_continual/cached_batches.py",
+      "included": true,
+      "sha256": "d207bad8f7cf0801f243d0b03fa74b16ad462f82389f6d120a7b331b533c68cc",
+      "historical_pin_match": true,
+      "expected": [
+        "d207bad8f7cf0801f243d0b03fa74b16ad462f82389f6d120a7b331b533c68cc"
+      ]
+    },
+    {
+      "file": "stage80_continual/adamw_no_lerp.py",
+      "included": true,
+      "sha256": "2e8e1ffd2dd6959b118edca637a545647838d9986e0faf6107b76d84f1f2381a",
+      "historical_pin_match": true,
+      "expected": [
+        "2e8e1ffd2dd6959b118edca637a545647838d9986e0faf6107b76d84f1f2381a"
+      ]
+    },
+    {
+      "file": "stage80_continual/storage.py",
+      "included": true,
+      "sha256": "42045659d39124fc8eb5aef2119a3803851510c7bd7dac8c1d2241df95a8e78c",
+      "historical_pin_match": true,
+      "expected": [
+        "42045659d39124fc8eb5aef2119a3803851510c7bd7dac8c1d2241df95a8e78c"
+      ]
+    },
+    {
+      "file": "stage80_continual/gpu_lease.py",
+      "included": true,
+      "sha256": "3d165f890e6c8c17fd99f0414c98ea4ed689726ae51d9e26acae60f263fda949",
+      "historical_pin_match": true,
+      "expected": [
+        "3d165f890e6c8c17fd99f0414c98ea4ed689726ae51d9e26acae60f263fda949"
+      ]
+    },
+    {
+      "file": "stage80_continual/deadline.py",
+      "included": true,
+      "sha256": "d6203aaa033d4d2e2efbd5f08a90aaf374524b916af0e843dad6985dff558c4d",
+      "historical_pin_match": true,
+      "expected": [
+        "d6203aaa033d4d2e2efbd5f08a90aaf374524b916af0e843dad6985dff558c4d"
+      ]
+    },
+    {
+      "file": "stage80_continual/cumulative_memory_scale_v1.py",
+      "included": true,
+      "sha256": "f5c490fa03e1e059d2b4930dba84ee3f13b8d5ce56d9e0ce103de7ee8ee84433",
+      "historical_pin_match": true,
+      "expected": [
+        "f5c490fa03e1e059d2b4930dba84ee3f13b8d5ce56d9e0ce103de7ee8ee84433"
+      ]
+    },
+    {
+      "file": "stage80_continual/memory_dataset.py",
+      "included": true,
+      "sha256": "a61365291f9fd887cc44cb5c753f351d4cb34aec3233d4c850dd422cc9a30e66",
+      "historical_pin_match": true,
+      "expected": [
+        "a61365291f9fd887cc44cb5c753f351d4cb34aec3233d4c850dd422cc9a30e66"
+      ]
+    },
+    {
+      "file": "stage80_continual/isolated_generation_batch_v1.py",
+      "included": true,
+      "sha256": "eba5f2bb20b3e788f9c580359925be70fd04f41b4609df355ed54190e6b81fa1",
+      "historical_pin_match": true,
+      "expected": [
+        "eba5f2bb20b3e788f9c580359925be70fd04f41b4609df355ed54190e6b81fa1"
+      ]
+    },
+    {
+      "file": "stage80_continual/probe_isolated_generation_batch_v1.py",
+      "included": true,
+      "sha256": "2c74f38982eb4e436b0897e485852c8cc7cc371397f379fd54c7484edec0492c",
+      "historical_pin_match": true,
+      "expected": [
+        "2c74f38982eb4e436b0897e485852c8cc7cc371397f379fd54c7484edec0492c"
+      ]
+    },
+    {
+      "file": "stage80_continual/permutation_broad_skill_protocol_v8.py",
+      "included": true,
+      "sha256": "f074ce404aed02f73ee17eea51797a248797a13bbe38047a092d00799f38ad51",
+      "historical_pin_match": true,
+      "expected": [
+        "f074ce404aed02f73ee17eea51797a248797a13bbe38047a092d00799f38ad51"
+      ]
+    },
+    {
+      "file": "stage80_continual/run_permutation_broad_skill_v8.py",
+      "included": true,
+      "sha256": "11f906001ff80df9268dad888c9ca4b99e4fce1d295daa257252f6612b506431",
+      "historical_pin_match": true,
+      "expected": [
+        "11f906001ff80df9268dad888c9ca4b99e4fce1d295daa257252f6612b506431"
+      ]
+    },
+    {
+      "file": "stage80_continual/audit_permutation_broad_skill_v8.py",
+      "included": true,
+      "sha256": "6325c8e58806cb53316415f4903e532d51f012610f8f1794b2a8412d6e206049",
+      "historical_pin_match": true,
+      "expected": [
+        "6325c8e58806cb53316415f4903e532d51f012610f8f1794b2a8412d6e206049"
+      ]
+    },
+    {
+      "file": "stage80_continual/prepare_permutation_broad_skill_v8.py",
+      "included": true,
+      "sha256": "0e204f2792737904a0909c2f2de4d9d240e2baf436cca52a1ee4a04ba91323f1",
+      "historical_pin_match": true,
+      "expected": [
+        "0e204f2792737904a0909c2f2de4d9d240e2baf436cca52a1ee4a04ba91323f1"
+      ]
+    },
+    {
+      "file": "stage80_continual/test_permutation_broad_skill_protocol_v8.py",
+      "included": true,
+      "sha256": "b9de38887518bd71be35743cbbf2a4a2db9c445ec7b98fee126dbe4473dc2f0f",
+      "historical_pin_match": true,
+      "expected": [
+        "b9de38887518bd71be35743cbbf2a4a2db9c445ec7b98fee126dbe4473dc2f0f"
+      ]
+    },
+    {
+      "file": "stage80_continual/prepare_permutation_broad_vocabulary_data_v8.py",
+      "included": true,
+      "sha256": "daddcdecb621bc607ee1069136e033306e0bd98dce29a5beffbbbc0268bdee9b",
+      "historical_pin_match": true,
+      "expected": [
+        "daddcdecb621bc607ee1069136e033306e0bd98dce29a5beffbbbc0268bdee9b"
+      ]
+    },
+    {
+      "file": "stage80_continual/shared_skill_module_v1.py",
+      "included": true,
+      "sha256": "148eedbc8fac143f7bd81e7cea6645e4abd2cf9e7cc37eeac47edab0d91a90b4",
+      "historical_pin_match": true,
+      "expected": [
+        "148eedbc8fac143f7bd81e7cea6645e4abd2cf9e7cc37eeac47edab0d91a90b4"
+      ]
+    },
+    {
+      "file": "stage80_continual/shared_skill_training_v1.py",
+      "included": true,
+      "sha256": "a2818cf6aafccdfb6da5ac1d5640daa9bdc6816078782caf74f4256cdb477161",
+      "historical_pin_match": true,
+      "expected": [
+        "a2818cf6aafccdfb6da5ac1d5640daa9bdc6816078782caf74f4256cdb477161"
+      ]
+    },
+    {
+      "file": "stage80_continual/audit_permutation_broad_runtime_preflight_cpu_v8.py",
+      "included": true,
+      "sha256": "092884e1d7318463e671883ec28b42d11389cb3ae983dd73cd6be14a23825501",
+      "historical_pin_match": true,
+      "expected": [
+        "092884e1d7318463e671883ec28b42d11389cb3ae983dd73cd6be14a23825501"
+      ]
+    },
+    {
+      "file": "stage80_continual/conditional_skill_protocol_v5.py",
+      "included": true,
+      "sha256": "532512d5b74645c774e9e729f24b1a7b2815ffc04c5d699ce9892115ce245947",
+      "historical_pin_match": true,
+      "expected": [
+        "532512d5b74645c774e9e729f24b1a7b2815ffc04c5d699ce9892115ce245947"
+      ]
+    },
+    {
+      "file": "stage80_continual/scale_protocol_v1.py",
+      "included": true,
+      "sha256": "79f4eb64937fe9ad7a18b773b8eeb938f440d8786512c76db532f43d5d2c6a02",
+      "historical_pin_match": true,
+      "expected": [
+        "79f4eb64937fe9ad7a18b773b8eeb938f440d8786512c76db532f43d5d2c6a02"
+      ]
+    },
+    {
+      "file": "stage80_continual/isolated_inference_audit_v1.py",
+      "included": true,
+      "sha256": "0d3059476a33cdfe673c8eeb300b973ce4c2367ca2168e94295eb8903a6b0918",
+      "historical_pin_match": true,
+      "expected": [
+        "0d3059476a33cdfe673c8eeb300b973ce4c2367ca2168e94295eb8903a6b0918"
+      ]
+    },
+    {
+      "file": "stage80_continual/nontruncating_chat_cache_v1.py",
+      "included": true,
+      "sha256": "223bc11b81066d60c639a69f33a32bb81876f5ff3a44304e620238c3bb71b67c",
+      "historical_pin_match": true,
+      "expected": [
+        "223bc11b81066d60c639a69f33a32bb81876f5ff3a44304e620238c3bb71b67c"
+      ]
+    },
+    {
+      "file": "stage80_continual/permutation_independent_world_protocol_v1.py",
+      "included": true,
+      "sha256": "e59a37815b8c8fc6f132bbc07b610f9aa56ebeb9511026a31d3cf6d6ae63b83e",
+      "historical_pin_match": true,
+      "expected": [
+        "e59a37815b8c8fc6f132bbc07b610f9aa56ebeb9511026a31d3cf6d6ae63b83e"
+      ]
+    },
+    {
+      "file": "stage80_continual/run_permutation_independent_world_v1.py",
+      "included": true,
+      "sha256": "5a45c127e8d82053180c97156700bb9020ca8e59d9b2a7ccdf4c85929163375d",
+      "historical_pin_match": true,
+      "expected": [
+        "5a45c127e8d82053180c97156700bb9020ca8e59d9b2a7ccdf4c85929163375d"
+      ]
+    },
+    {
+      "file": "stage80_continual/audit_permutation_independent_world_v1.py",
+      "included": true,
+      "sha256": "4087001a71eb6beb4e31430712fc9bdb5a2d01568bc54d074ef9bffd7a6cff1c",
+      "historical_pin_match": true,
+      "expected": [
+        "4087001a71eb6beb4e31430712fc9bdb5a2d01568bc54d074ef9bffd7a6cff1c"
+      ]
+    },
+    {
+      "file": "stage80_continual/prepare_permutation_independent_world_production_v1.py",
+      "included": true,
+      "sha256": "9c5d94ff17ed4f7ae39d56a82abf11a71e02b478d87184726243d567c30aa462",
+      "historical_pin_match": true,
+      "expected": [
+        "9c5d94ff17ed4f7ae39d56a82abf11a71e02b478d87184726243d567c30aa462"
+      ]
+    },
+    {
+      "file": "stage80_continual/test_permutation_independent_world_protocol_v1.py",
+      "included": true,
+      "sha256": "d9c9ccdee93e743a487ca5170b91f24f25890f98f9b73836050345aa7179e0a9",
+      "historical_pin_match": true,
+      "expected": [
+        "d9c9ccdee93e743a487ca5170b91f24f25890f98f9b73836050345aa7179e0a9"
+      ]
+    },
+    {
+      "file": "stage80_continual/shared_skill_training_independent_world_v1.py",
+      "included": true,
+      "sha256": "5ade3a8f0cb52660b9c02cae0c575b61d11aef114dabec17f26a46a3b07eb74c",
+      "historical_pin_match": true,
+      "expected": [
+        "5ade3a8f0cb52660b9c02cae0c575b61d11aef114dabec17f26a46a3b07eb74c"
+      ]
+    },
+    {
+      "file": "stage80_continual/audit_permutation_independent_world_runtime_v1.py",
+      "included": true,
+      "sha256": "53e8968800e6f919c77880543c27f1a00870fdebdb3c812a4276bf9ebcf4f9fd",
+      "historical_pin_match": true,
+      "expected": [
+        "53e8968800e6f919c77880543c27f1a00870fdebdb3c812a4276bf9ebcf4f9fd"
+      ]
+    },
+    {
+      "file": "stage80_continual/prepare_permutation_independent_world_CPU_v1.py",
+      "included": true,
+      "sha256": "a30a8386c12e8119bcf4ae1268b7be4c744170f46cb761df16ce78dd730c14d2",
+      "historical_pin_match": true,
+      "expected": [
+        "a30a8386c12e8119bcf4ae1268b7be4c744170f46cb761df16ce78dd730c14d2"
+      ]
+    },
+    {
+      "file": "stage80_continual/audit_V8_later_isolated_stage_v1.py",
+      "included": true,
+      "sha256": "165ab48ff2c185831dd0f3e8107b25474105646ad1bc2856a401067ca0698ecf",
+      "historical_pin_match": true,
+      "expected": [
+        "165ab48ff2c185831dd0f3e8107b25474105646ad1bc2856a401067ca0698ecf"
+      ]
+    },
+    {
+      "file": "stage80_continual/post_conditional_retention_protocol_v5.py",
+      "included": true,
+      "sha256": "94432ce6e3e1fec4b42363b5e9e678c14cddbd1349eb23bbd0f2551c54f4a2e5",
+      "historical_pin_match": true,
+      "expected": [
+        "94432ce6e3e1fec4b42363b5e9e678c14cddbd1349eb23bbd0f2551c54f4a2e5"
+      ]
+    },
+    {
+      "file": "stage80_continual/prepare_V8_later_isolated_stage_v1.py",
+      "included": true,
+      "sha256": "78d10c6ac10f4e87c6721be8bff72e7f4049c41dfad0c0020c55e8fe992c6565",
+      "historical_pin_match": true,
+      "expected": [
+        "78d10c6ac10f4e87c6721be8bff72e7f4049c41dfad0c0020c55e8fe992c6565"
+      ]
+    },
+    {
+      "file": "stage80_continual/prepare_V8_later_learning_contract_cpu_v1.py",
+      "included": true,
+      "sha256": "058c68c91d3512244db83c932cdddbd23b0135563fce9b53e6533610083825ba",
+      "historical_pin_match": true,
+      "expected": [
+        "058c68c91d3512244db83c932cdddbd23b0135563fce9b53e6533610083825ba"
+      ]
+    },
+    {
+      "file": "stage80_continual/queue_matched_memory_v1.py",
+      "included": true,
+      "sha256": "b5fbd6421497b7042e6a1c49218b59decdefeea0e9da08e23d4f87fe63dc4ed1",
+      "historical_pin_match": true,
+      "expected": [
+        "b5fbd6421497b7042e6a1c49218b59decdefeea0e9da08e23d4f87fe63dc4ed1"
+      ]
+    },
+    {
+      "file": "stage80_continual/run_V8_later_isolated_stage_v1.py",
+      "included": true,
+      "sha256": "06f756dad544a5dd7b6f440282495bd94e6d4c6e3ddbaca5200c1f01ce7d4402",
+      "historical_pin_match": true,
+      "expected": [
+        "06f756dad544a5dd7b6f440282495bd94e6d4c6e3ddbaca5200c1f01ce7d4402"
+      ]
+    },
+    {
+      "file": "stage80_continual/test_V8_later_isolated_stage_v1.py",
+      "included": true,
+      "sha256": "f2259ce99911f7371082ab61ae08da0ea26422702776f15aece35619adcb75f7",
+      "historical_pin_match": true,
+      "expected": [
+        "f2259ce99911f7371082ab61ae08da0ea26422702776f15aece35619adcb75f7"
+      ]
+    },
+    {
+      "file": "stage80_continual/test_v8_later_learning_contract_v1.py",
+      "included": true,
+      "sha256": "fc7cbaf628a57b3e133ec4af464275e477ecaf797d938cbfe22d7e3b6aeffc03",
+      "historical_pin_match": true,
+      "expected": [
+        "fc7cbaf628a57b3e133ec4af464275e477ecaf797d938cbfe22d7e3b6aeffc03"
+      ]
+    },
+    {
+      "file": "stage80_continual/v8_later_isolated_protocol_v1.py",
+      "included": true,
+      "sha256": "1d7a95d5855bd6a128bcbfe3c748be3ffa7ebcf46109594ad701da1bd2072481",
+      "historical_pin_match": true,
+      "expected": [
+        "1d7a95d5855bd6a128bcbfe3c748be3ffa7ebcf46109594ad701da1bd2072481"
+      ]
+    },
+    {
+      "file": "stage80_continual/v8_later_learning_contract_v1.py",
+      "included": true,
+      "sha256": "bcd1f590ee4681c1b36eb83b7aa8dc9961f475be2e8ab802991b2580572125dc",
+      "historical_pin_match": true,
+      "expected": [
+        "bcd1f590ee4681c1b36eb83b7aa8dc9961f475be2e8ab802991b2580572125dc"
+      ]
+    },
+    {
+      "file": "stage80_continual/audit_deployment_fp16_v1.py",
+      "included": true,
+      "sha256": "ab9c18eca8e3391687a2718e4a9d1bab28015e9eb477544399aa11fce377c096",
+      "historical_pin_match": true,
+      "expected": [
+        "ab9c18eca8e3391687a2718e4a9d1bab28015e9eb477544399aa11fce377c096"
+      ]
+    },
+    {
+      "file": "stage80_continual/audit_deployment_fp16_v2.py",
+      "included": true,
+      "sha256": "cdf4e3219bc04218e546b5bfeab4caaf565b84e58f0e0484b0fe407e3a793362",
+      "historical_pin_match": true,
+      "expected": [
+        "cdf4e3219bc04218e546b5bfeab4caaf565b84e58f0e0484b0fe407e3a793362"
+      ]
+    },
+    {
+      "file": "stage80_continual/audit_deployment_inputs_cpu_v1.py",
+      "included": true,
+      "sha256": "5d689c28ac297fa6f6a91fac8c308daa7a2e9e703b27d2bb0ce1818c084b6c97",
+      "historical_pin_match": true,
+      "expected": [
+        "5d689c28ac297fa6f6a91fac8c308daa7a2e9e703b27d2bb0ce1818c084b6c97"
+      ]
+    },
+    {
+      "file": "stage80_continual/deployment_inputs_fp16_v1.py",
+      "included": true,
+      "sha256": "7c6d8cb330d81cd4ad43e05c6a40fbc9e18b7f69947292fb4091e4a8da5e2920",
+      "historical_pin_match": true,
+      "expected": [
+        "7c6d8cb330d81cd4ad43e05c6a40fbc9e18b7f69947292fb4091e4a8da5e2920"
+      ]
+    },
+    {
+      "file": "stage80_continual/deployment_inputs_fp16_v2.py",
+      "included": true,
+      "sha256": "7f01c5bc4fabeca88fec1c887d5c74a582bbe61806b638e70fe5c65cfc217cfc",
+      "historical_pin_match": true,
+      "expected": [
+        "7f01c5bc4fabeca88fec1c887d5c74a582bbe61806b638e70fe5c65cfc217cfc"
+      ]
+    },
+    {
+      "file": "stage80_continual/half_round_towards_zero_cpu_v1.py",
+      "included": true,
+      "sha256": "396dc2d1a652aa9094c6b6511e35a5a195b115309618c975b7c394adceffd96e",
+      "historical_pin_match": true,
+      "expected": [
+        "396dc2d1a652aa9094c6b6511e35a5a195b115309618c975b7c394adceffd96e"
+      ]
+    },
+    {
+      "file": "stage80_continual/prepare_deployment_fp16_v1.py",
+      "included": true,
+      "sha256": "5fcdb130112ac5789a7865fdeea5ae56d738bb034a22257844ec70933841bbc4",
+      "historical_pin_match": true,
+      "expected": [
+        "5fcdb130112ac5789a7865fdeea5ae56d738bb034a22257844ec70933841bbc4"
+      ]
+    },
+    {
+      "file": "stage80_continual/prepare_deployment_fp16_v2.py",
+      "included": true,
+      "sha256": "804212c22af18c6a80d7a29c130d5ee4d9687b00ca5753e7293f053e5c717afe",
+      "historical_pin_match": true,
+      "expected": [
+        "804212c22af18c6a80d7a29c130d5ee4d9687b00ca5753e7293f053e5c717afe"
+      ]
+    },
+    {
+      "file": "stage80_continual/probe_directml_half_conversion_v1.py",
+      "included": true,
+      "sha256": "ef6d0759a116a9718519a3b8a3c4b5f12a64ea0ef298e6bf13acc322f1fa8cfe",
+      "historical_pin_match": true,
+      "expected": [
+        "ef6d0759a116a9718519a3b8a3c4b5f12a64ea0ef298e6bf13acc322f1fa8cfe"
+      ]
+    },
+    {
+      "file": "stage80_continual/run_deployment_fp16_v1.py",
+      "included": true,
+      "sha256": "7aeaf02892da4ba4cf1284545995376144474e3c0ac111bfbc8869b818268ebb",
+      "historical_pin_match": true,
+      "expected": [
+        "7aeaf02892da4ba4cf1284545995376144474e3c0ac111bfbc8869b818268ebb"
+      ]
+    },
+    {
+      "file": "stage80_continual/run_deployment_fp16_v2.py",
+      "included": true,
+      "sha256": "397a286b460ce5f396b3920ac0d17b347ba619c209a1c214bacaa7568c8f114c",
+      "historical_pin_match": true,
+      "expected": [
+        "397a286b460ce5f396b3920ac0d17b347ba619c209a1c214bacaa7568c8f114c"
+      ]
+    },
+    {
+      "file": "stage80_continual/base_audit.py",
+      "included": true,
+      "sha256": "26253c3aa3c5bd1d871dcd45cd09961940517ad7d94398c7c2687ea8f4f0ca51",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/confirmation_dataset.py",
+      "included": true,
+      "sha256": "53bd74d1937afca149bb26c3224939a4f2ca82d6947e7202411bacf5b40ad35c",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/stage79a_scorer.py",
+      "included": true,
+      "sha256": "0b7b4375a15f29e8a7696c17a185db790854496ee748419cacc7301229816715",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/wordgen.py",
+      "included": true,
+      "sha256": "b64845b697690dd75f26636604f6b5304918b88a5a40af5e2bbfba01cd292d31",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/prepare_permutation_skill_v7.py",
+      "included": true,
+      "sha256": "56e338fa911c53e5b11b8e43a7790020417d0ecaedb4e81609d350892994d0c9",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/assessment.py",
+      "included": true,
+      "sha256": "7971eb9618afc1eb0f5866e00ffda275736fe499483e8e9a98e2755a9970adfd",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/assess_skill_retention.py",
+      "included": true,
+      "sha256": "04a5a7aee0eb5e4b23924020302d67445284966b87e731955e0741e86ae0ea44",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/continued_learning_protocol_v1.py",
+      "included": true,
+      "sha256": "035e3ab5c594668f696d589f479216b978dd3a10eb9d749dd84e2bd8057156a0",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/expansion_protocol.py",
+      "included": true,
+      "sha256": "3cc7f85dfb7ba81da303712e2bf28ad10c375510383f7f0648459c08a67355ae",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/queue_broad_skill_v8_recovery_v2.py",
+      "included": true,
+      "sha256": "6863db12711254e7a02febcc1ab08876dd8995fd55450c79c6fd084091e5fd9d",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/preservation_dataset.py",
+      "included": true,
+      "sha256": "bec254346012c66db5b2257fdb03dc111709965045764beeccbe4f7562c06973",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage80_continual/permutation_skill_protocol_v7.py",
+      "included": true,
+      "sha256": "21916609433159c3443b958699fb9645f535762b09ac6669e512b2b28b5976bf",
+      "historical_pin_match": false,
+      "expected": []
+    },
+    {
+      "file": "stage72_gpu/directml_patch.py",
+      "included": true,
+      "sha256": "ed59c61e88b07f183b8001cc13e39c3439cb948d2c0890951f66e4979e177ef3"
+    }
+  ],
+  "base_weights_included": false,
+  "fresh_neural_reproduction_performed": false
+}

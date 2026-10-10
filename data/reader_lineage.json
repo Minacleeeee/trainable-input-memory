@@ -1,0 +1,92 @@
+{
+  "reader_model": {
+    "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "revision": "31b70e2e869a7173562077fd711b654946d38674",
+    "context_capacity": 8192
+  },
+  "maintenance_checkpoint": "repair_maintenance_s42_v1/checkpoints/cycle_0001",
+  "maintenance_result_sha256": "69203b51195d2ede28df21129a8ede3e2ff61f8410361a3274f965fdd809450d",
+  "maintenance_checkpoint_hashes": {
+    "single\\adapter_config.json": "1c1ed047c8ec0c4b8dc56ec73f0488bfc95b1e1abe0bd919a83533120d39e168",
+    "single\\adapter_model.safetensors": "3cc7e8055da82cba4332f557850aa9892fe075da9a69b6b7f0476ce8e5010897"
+  },
+  "maintenance_manifest": {
+    "protocol": "stage80_capacity_single_fullr6_v3_broader_maintenance",
+    "args": {
+      "run_id": "repair_maintenance_s42_v1",
+      "seed": 42,
+      "items": 128,
+      "block": 128,
+      "teach_epochs": 8,
+      "sleep_epochs": 6,
+      "teach_lr": 0.0001,
+      "sleep_lr": 3e-05,
+      "preserve_base": true,
+      "anchor_version": "v2",
+      "facts_from_run": "repair_joint_rehearse_s42_v1",
+      "batch": 8,
+      "optimizer": "no_lerp",
+      "sleep_source": "archive",
+      "buffer": 512,
+      "start_checkpoint": "<historical-project>/data/stage80_continual/repair_joint_rehearse_s42_v1/checkpoints/cycle_0002",
+      "include_skills": true,
+      "skill_policy": "rehearse"
+    },
+    "backbone": {
+      "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "revision": "31b70e2e869a7173562077fd711b654946d38674",
+      "context_capacity": 8192
+    },
+    "dataset_hash": "c1ca84085c61fa5932526759815e7b9778bc775a5189baf3a0d91d36c507b0e4",
+    "environment": {
+      "torch": "2.4.1+cpu",
+      "transformers": "4.46.3",
+      "peft": "0.21.1",
+      "device": "privateuseone:0",
+      "torch_directml": "0.2.5.dev240914"
+    },
+    "code_hashes": {
+      "run_capacity_v3.py": "d6893aa0569b6850156e129b8235f97f5242d19d5f1e6f50f67e78249bd45f94",
+      "capacity_engine.py": "5930246afb181624a829501d886e5f7618ce3dee23decd3ef603c8b648df0796",
+      "engine.py": "2294af35cf287a2979eec0b3c8912279bc422c7e3d589e1c79ea4fcfbcc9e970",
+      "storage.py": "42045659d39124fc8eb5aef2119a3803851510c7bd7dac8c1d2241df95a8e78c",
+      "model_support.py": "15df3d0ca2fe822c27adf75a920e4432ab0b726a7ce883994e088f235eda93a7",
+      "memory_dataset.py": "a61365291f9fd887cc44cb5c753f351d4cb34aec3233d4c850dd422cc9a30e66",
+      "skill_dataset.py": "85eba1cffadaa966ca50fd417ec6afc3cd5ad4e535442fda3f1b8bbec4f4ead8",
+      "wordgen.py": "b64845b697690dd75f26636604f6b5304918b88a5a40af5e2bbfba01cd292d31",
+      "base_audit.py": "26253c3aa3c5bd1d871dcd45cd09961940517ad7d94398c7c2687ea8f4f0ca51",
+      "cached_batches.py": "d207bad8f7cf0801f243d0b03fa74b16ad462f82389f6d120a7b331b533c68cc",
+      "adamw_no_lerp.py": "2e8e1ffd2dd6959b118edca637a545647838d9986e0faf6107b76d84f1f2381a",
+      "capacity_protocol.py": "1591ea0216f63610077261b9219f2f58d1d397f34eb03316919c79ddbefbc932",
+      "gpu_lease.py": "3d165f890e6c8c17fd99f0414c98ea4ed689726ae51d9e26acae60f263fda949",
+      "deadline.py": "d6203aaa033d4d2e2efbd5f08a90aaf374524b916af0e843dad6985dff558c4d",
+      "preservation_dataset.py": "bec254346012c66db5b2257fdb03dc111709965045764beeccbe4f7562c06973",
+      "preservation_dataset_v2.py": "f9e0c8550af5ecdbb361cef786d25388f134de68d7d46797dcd143fe439399b0",
+      "confirmation_dataset.py": "53bd74d1937afca149bb26c3224939a4f2ca82d6947e7202411bacf5b40ad35c",
+      "maintenance_protocol.py": "b3ab7d2c23fe9eaa86a2c1c03900ebe73341adf954997f9159c776259f51cbc5"
+    },
+    "training_source_policy": "archive",
+    "inference_policy": "network forward on current question only",
+    "source_checkpoint_fingerprint": {
+      "path": "<historical-project>\\data\\stage80_continual\\repair_joint_rehearse_s42_v1\\checkpoints\\cycle_0002",
+      "files": {
+        "single\\adapter_config.json": "b4def87e1078ce890db4199872ee276548c226629edc2f4ede5ac2c34707c0d7",
+        "single\\adapter_model.safetensors": "a35b5aec41f2f31733a28014cc4f02864731ea58a52af08f8ce07339ed2ab35f"
+      }
+    },
+    "source_fact_record": {
+      "run_id": "repair_joint_rehearse_s42_v1",
+      "original_dataset_hash": "6870bcedd8dbe54a8422e342094f06119bfc4754c125e8ac7fb99c214dd74379",
+      "source_results_hash": "888cfde9320280685d0d02732157c0617bac0a9a357963802b97ec2884debec4",
+      "facts_are_previously_taught": true,
+      "novel_fact_count": 0
+    },
+    "external_code_hashes": {
+      "stage72_gpu/directml_patch.py": "ed59c61e88b07f183b8001cc13e39c3439cb948d2c0890951f66e4979e177ef3"
+    },
+    "skills_hash": "2126eb04bef11f27eb4e0590cd0249136dce91616a7c7c2f8e0388ee0add21a5",
+    "general_anchor_hash": "f5dffe32ad910cc383aff0a3037b75b7a50303c93ef5ce83dceca61a6036f81a",
+    "general_anchor_policy": "disjoint supervised capability rehearsal every phase"
+  },
+  "prior_skill_exposure": "The maintenance adapter rehearsed the original three-word rotation/reversal teachers. The four-word vector experiment is not a pristine-reader experiment."
+}

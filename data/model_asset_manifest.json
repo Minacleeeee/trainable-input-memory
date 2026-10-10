@@ -1,0 +1,147 @@
+[
+  {
+    "file": "fp16/inference_config.json",
+    "bytes": 465,
+    "sha256": "3fb50d523fd6fc8f14379cd70baee932ba6214c7a49362dd5637c6ee67902c1e"
+  },
+  {
+    "file": "fp16/input_parameters.pt",
+    "bytes": 41949170,
+    "sha256": "04859dfdade029f921ea9bfa6a02dd34cb6cc82e35fc08fc0950b606c112cab6"
+  },
+  {
+    "file": "fp16/lexical_inventory.json",
+    "bytes": 183159,
+    "sha256": "e7a47e15bf7f369634d8fc3637da35bdba4023a18352cd00bab4b38b0abcbecf"
+  },
+  {
+    "file": "input_a/inference_config.json",
+    "bytes": 465,
+    "sha256": "3fb50d523fd6fc8f14379cd70baee932ba6214c7a49362dd5637c6ee67902c1e"
+  },
+  {
+    "file": "input_a/input_parameters.pt",
+    "bytes": 83900664,
+    "sha256": "d683b7415c7ff8076cd939ce7d7c65a6ee1d5d2c6ea432970d948b49da11263e"
+  },
+  {
+    "file": "input_a/lexical_inventory.json",
+    "bytes": 183177,
+    "sha256": "862c073cbdb14c2e0f2c8dc84433deaba5229c233c473b443ee23d98333d78a4"
+  },
+  {
+    "file": "input_a/shared_skill_config.json",
+    "bytes": 48,
+    "sha256": "0c8605eaff680d19b5bc6c53841232828d8a44838222a6555c731368a38ed62b"
+  },
+  {
+    "file": "input_b/inference_config.json",
+    "bytes": 465,
+    "sha256": "3fb50d523fd6fc8f14379cd70baee932ba6214c7a49362dd5637c6ee67902c1e"
+  },
+  {
+    "file": "input_b/input_parameters.pt",
+    "bytes": 83900664,
+    "sha256": "c9031f07c0a010c076eba5c2f6321c8cee76f602ecd24e19e965a5436b1da739"
+  },
+  {
+    "file": "input_b/lexical_inventory.json",
+    "bytes": 183177,
+    "sha256": "862c073cbdb14c2e0f2c8dc84433deaba5229c233c473b443ee23d98333d78a4"
+  },
+  {
+    "file": "input_b/shared_skill_config.json",
+    "bytes": 48,
+    "sha256": "0c8605eaff680d19b5bc6c53841232828d8a44838222a6555c731368a38ed62b"
+  },
+  {
+    "file": "later/inference_config.json",
+    "bytes": 465,
+    "sha256": "3fb50d523fd6fc8f14379cd70baee932ba6214c7a49362dd5637c6ee67902c1e"
+  },
+  {
+    "file": "later/input_parameters.pt",
+    "bytes": 88095230,
+    "sha256": "ad77100e7756331bc1cd3786a2f7aa07c448ce60c0185da27f1921e6725ec8f2"
+  },
+  {
+    "file": "later/lexical_inventory.json",
+    "bytes": 192307,
+    "sha256": "a45ed26ad590f489a55f8e85a1231a05965bfd5f3e9c41876cef5bf926d836d2"
+  },
+  {
+    "file": "later/shared_skill_config.json",
+    "bytes": 48,
+    "sha256": "0c8605eaff680d19b5bc6c53841232828d8a44838222a6555c731368a38ed62b"
+  },
+  {
+    "file": "LICENSE",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "file": "maintenance/single/adapter_config.json",
+    "bytes": 1239,
+    "sha256": "1c1ed047c8ec0c4b8dc56ec73f0488bfc95b1e1abe0bd919a83533120d39e168"
+  },
+  {
+    "file": "maintenance/single/adapter_model.safetensors",
+    "bytes": 27176032,
+    "sha256": "3cc7e8055da82cba4332f557850aa9892fe075da9a69b6b7f0476ce8e5010897"
+  },
+  {
+    "file": "NOTICE",
+    "bytes": 362,
+    "sha256": "561939a4c8b76ff6150a244e7c4f101d0f79fcffca6537ba50e47c767616db0d"
+  },
+  {
+    "file": "README.txt",
+    "bytes": 1184,
+    "sha256": "e5a2c37a6bc16b7717b3225bba21c3966350211eb28406b2621d4bc8e26b1f93"
+  },
+  {
+    "file": "scale/inference_config.json",
+    "bytes": 465,
+    "sha256": "3fb50d523fd6fc8f14379cd70baee932ba6214c7a49362dd5637c6ee67902c1e"
+  },
+  {
+    "file": "scale/input_parameters.pt",
+    "bytes": 83892210,
+    "sha256": "f1cb532f7382fd3f7051bee630360332a21ef3454f18979ac98b1473d614e0ab"
+  },
+  {
+    "file": "scale/lexical_inventory.json",
+    "bytes": 183159,
+    "sha256": "e7a47e15bf7f369634d8fc3637da35bdba4023a18352cd00bab4b38b0abcbecf"
+  },
+  {
+    "file": "shared_a/inference_config.json",
+    "bytes": 465,
+    "sha256": "3fb50d523fd6fc8f14379cd70baee932ba6214c7a49362dd5637c6ee67902c1e"
+  },
+  {
+    "file": "shared_a/input_parameters.pt",
+    "bytes": 83900664,
+    "sha256": "781c88b1ae05b9a533cc3e98e1e0738092b055a8de276e90fd1b624309f12e3d"
+  },
+  {
+    "file": "shared_a/lexical_inventory.json",
+    "bytes": 183177,
+    "sha256": "862c073cbdb14c2e0f2c8dc84433deaba5229c233c473b443ee23d98333d78a4"
+  },
+  {
+    "file": "shared_a/shared_skill_config.json",
+    "bytes": 300,
+    "sha256": "abe5e3778377a279bf93139431a6e3e9efe4219444634c1e84bde84f94b9d114"
+  },
+  {
+    "file": "shared_a/shared_skill_parameters.pt",
+    "bytes": 67728,
+    "sha256": "322412eadb3fde46d092961c422f51a08751ec103b7863727f9148dcc8fd319c"
+  },
+  {
+    "file": "THIRD_PARTY_NOTICES.md",
+    "bytes": 1198,
+    "sha256": "a0dd9b15aa91256043b204b08aaa4ac4a56d10054ee08788ba715f186bd01111"
+  }
+]

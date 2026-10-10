@@ -1,0 +1,3 @@
+Trainable Input Memories and Skill Binding
+Copyright 2026 Shenghe Li.
+This release includes original research code, synthetic task evidence and separately packaged trained parameter assets. The frozen reader depends on SmolLM2-1.7B-Instruct by HuggingFaceTB, distributed separately. See THIRD_PARTY_NOTICES.md. The manuscript has a separate CC BY 4.0 notice.

@@ -1,0 +1,44 @@
+MANUAL PUBLICATION GUIDE - ENGLISH RELEASE
+
+Status: files prepared locally. No GitHub repository or arXiv submission has been created by this release process. Publication is to be completed by Shenghe Li.
+
+FILES TO USE
+1. paper_en.pdf: read-only English paper for inspection.
+2. arxiv_source.zip: upload to arXiv. Contains the complete paper source, main.tex, at archive root.
+3. github_release.zip: extract and upload its CONTENTS to a new GitHub repository. Do not merely upload this ZIP as the only repository file.
+4. model_assets.zip: attach as a GitHub Release asset, not as an ordinary repository file.
+5. ARXIV_METADATA.txt: copy title, author, abstract, and other fields.
+6. SHA256SUMS.txt: checksums of the final downloadable artifacts.
+
+A. PUBLISH GITHUB FIRST
+1. Sign in to your GitHub account. The account previously verified in the connected session was Minacleeeee; confirm you are using your intended account.
+2. Create a PUBLIC repository named trainable-input-memory. Use description: "Auditable empirical evidence for learned input memories and vocabulary transfer in a frozen language model."
+3. Upload the extracted contents of github_release.zip. README.md, LICENSE, paper/, data/, tools/, docs/, and source_archive/ should be at the repository root. If the browser imposes a file-count limit, upload top-level files and each directory in separate commits. The supplied repository has no large model files.
+4. The supplied code/evidence/assets license is Apache-2.0. The manuscript license is CC BY 4.0. Keep the supplied notices. Author identity is Shenghe Li; Minacle is the nickname. AI contributions are credited in the manuscript and docs/AI_CONTRIBUTIONS.md, not as human author accounts.
+5. Open README.md and paper/main.pdf on GitHub. Check that the links and displayed files work.
+6. Open Releases > Draft a new release. Create tag v1.0.0, title "v1.0.0 - Evidence release". Copy docs/RELEASE_NOTES.md into the description. Attach model_assets.zip, paper_en.pdf, arxiv_source.zip, and SHA256SUMS.txt. You may also attach github_release.zip as a convenient complete download. Publish the release.
+7. Copy the actual repository/release URL. If you used the suggested account/name, it should be https://github.com/Minacleeeee/trainable-input-memory . This is a planned address, not a claim that it already exists.
+
+B. SUBMIT TO ARXIV
+1. Sign in and choose START NEW SUBMISSION. Complete author agreement and account checks with your true identity. Suggested field: cs.CL (Computation and Language); use the category that accurately describes the paper, rather than selecting a category just to avoid endorsement.
+2. If endorsement is required, follow arXiv's endorsement process. Successful registration does not guarantee submission eligibility or acceptance. Do not invent an affiliation, endorser, journal reference, or DOI.
+3. Select CC BY 4.0 to match the supplied manuscript license. Read the actual agreement before confirming it.
+4. Upload arxiv_source.zip. Select main.tex as the top-level file and PDFLaTeX as processor if asked. Standard TeX Live packages are used; no shell escape or custom fonts are needed.
+5. Wait for processing. Open arXiv's generated PDF and check all 8 pages, especially both tables, six response examples, author name, references, and AI disclosure. Local compilation passed; the server-generated PDF still requires inspection.
+6. Copy the fields from ARXIV_METADATA.txt. Add the actual GitHub URL to Comments if space permits, for example: "8 pages; code, evidence and parameter assets: [actual URL]". Replace that example with the real URL, not literal square-bracket text.
+7. Review the submission preview and author list. The sole paper author is Shenghe Li. OpenAI Codex and ByteDance Seed2.1 appear only in the AI assistance section.
+8. Complete the final Submit step yourself. Save the submission identifier and confirmation. Moderation and scheduling happen afterward; submission confirmation is not publication or acceptance.
+9. When arXiv assigns a public identifier, add its actual URL to the GitHub README and release description. Do not fabricate an identifier in advance.
+
+WHAT TEX SOURCES MEAN
+arXiv needs the files required to build the paper: .tex and any included figures, bibliography output/source, custom style files, etc. This paper keeps tables, examples, and the bibliography inside main.tex, so one .tex file is sufficient. arxiv_source.zip deliberately excludes the generated PDF, compilation logs, experimental Python, datasets and model parameters. Research code/data can be published separately on GitHub; they are not mandatory TeX compilation dependencies. Optional arXiv ancillary files are a different mechanism.
+
+WHAT HAS AND HAS NOT BEEN VERIFIED
+Primary saved-response statistics, split checks, export/source hashes, parameter asset hashes, English PDF layout, and source-only compilation are checked. The release contains historical training source snapshots; it is not a tested clean-machine neural training/inference package. No new model calls were made for publication, and no claim of independent human peer review is made. Read docs/CRITICAL_REVIEW.md for the scientific boundaries.
+
+OFFICIAL REFERENCES
+https://info.arxiv.org/help/submit_tex.html
+https://info.arxiv.org/help/ancillary_files.html
+https://info.arxiv.org/help/endorsement.html
+https://info.arxiv.org/help/license/index.html
+https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
