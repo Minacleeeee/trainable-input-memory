@@ -113,11 +113,33 @@ def main():
     result['later']={'canonical':508,'withheld':496,'conservative_acquired':acquired_later,'skill_raw_unchanged':448}
     assert paired(final,data['fp16']['result']['final_raw'])=={'count':21348,'raw_changed':0,'correct_lost':0}
     result['fp16']={'unchanged':21348,'tensor_bytes':data['fp16']['result']['resident_bank_tensor_bytes']}
+    newline_map = json.loads((ROOT/'data/source_newlines.json').read_text())
+    source_exact = source_reconstructed = 0
     for item in provenance['source_archive']:
         if item['included']:
-            assert hashlib.sha256((ROOT/'source_archive'/item['file']).read_bytes()).hexdigest()==item['sha256']
+            payload = (ROOT/'source_archive'/item['file']).read_bytes()
+            expected = item['sha256']
+            if hashlib.sha256(payload).hexdigest() == expected:
+                source_exact += 1
+            else:
+                # Restore only recorded newline layout, including mixed CRLF/LF.
+                # The ORIGINAL full-byte SHA is still mandatory; no edits ignored.
+                layout = newline_map[item['file']]
+                lines = payload.replace(b'\r\n', b'\n').split(b'\n')
+                assert len(lines)-1 == layout['newline_count'], item['file']
+                crlf = set(layout['crlf_newline_indices'])
+                assert all(type(i) is int and 0 <= i < len(lines)-1 for i in crlf)
+                restored = b'\n'.join(line + (b'\r' if i in crlf else b'')
+                                      for i,line in enumerate(lines))
+                assert hashlib.sha256(restored).hexdigest() == expected, item['file']
+                source_reconstructed += 1
+    result['source_integrity'] = {
+        'original_bytes_exact': source_exact,
+        'original_hash_reconstructed_from_newline_layout': source_reconstructed,
+        'historical_hashes_modified': False,
+    }
     print(json.dumps(result,indent=2))
-    print('PASS: all released primary counts, split checks, pairings and source hashes verified.')
+    print('PASS: all released primary counts, split checks, pairings and source hashes verified (newline reconstruction reported separately).')
 
 if __name__ == '__main__':
     main()

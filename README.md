@@ -45,6 +45,8 @@ Requires Python 3.10 or newer and no third-party packages. Do not use Python's `
 python tools/verify_results.py
 ```
 
+The verifier reports byte-exact archived sources separately from sources whose original hash is recovered using the recorded newline layout in `data/source_newlines.json`. This accounts for Git LF/CRLF conversion, including mixed historical line endings. It still requires the original full-byte hash and does not ignore other code changes or rewrite historical hashes.
+
 The verifier reads saved records, recomputes scores, checks paired responses, validates vocabulary splits and exposure balance, reconstructs conservative acquisitions, and verifies export/source hashes. It makes **zero model calls**. A successful run ends with `PASS`.
 
 ## Files
@@ -56,7 +58,7 @@ The verifier reads saved records, recomputes scores, checks paired responses, va
 - `source_archive/`: 76 historical Python source snapshots and local dependencies.
 - `tools/`: portable evidence verification.
 - `docs/`: reproduction boundary, release instructions, and AI assistance.
-- Separate `model_assets.zip` release asset: input parameters, lexical metadata, shared module, and maintenance adapter. The base weights are not bundled.
+- Separate [`model_assets.zip` release asset](https://github.com/Minacleeeee/trainable-input-memory/releases/download/v1.0.0/model_assets.zip): input parameters, lexical metadata, shared module, and maintenance adapter. The base weights are not bundled.
 
 ## Reproduction boundary
 
